@@ -22,6 +22,30 @@
       width: 30px;
       fill: #91929a;
     }
+	 /* Styling for table */
+	 table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tbody tr:nth-child(even){
+            background-color: #f9f9f9;
+        }
+		
 	</style>
 </head>
 
@@ -91,11 +115,11 @@
         <p><a href="#get-started">Let's get started</a></p>
     </section>
 		<div class="row">
-			<div class="col-md-4 pull-right">
+			<div class="col-md-4">
 				<aside>
 					<h2>Related Resources</h2>
 					<p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move.</p>
-					<ul>
+					<ul class="linklist">
 						<li><a href="#">Looking for an upgrade?</a></li>
 						<li><a href="#">Buying tips</a></li>
 						<li><a href="#">How much is your current home worth?</a></li>
@@ -111,12 +135,11 @@
 						<caption>Yearly Sales Statistics</caption>
 						<thead>
 							<tr>
-								<th>Year</th>
-								<th>Sold Properties</th>
-								<th>Average Selling Price</th>
+								<th rowspan="2">Year</th>
+								<th colspan="2">Sold Properties</th>
+								<th colspan="2">Average Selling Price</th>
 							</tr>
 							<tr>
-								<th></th>
 								<th>Quebec</th>
 								<th>Ontario</th>
 								<th>Single House</th>
